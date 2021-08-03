@@ -1,0 +1,1 @@
+export { default as DirectLink } from './common/DirectLink'
