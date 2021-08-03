@@ -1,10 +1,10 @@
 import React from 'react'
 import Button from '../components/Button';
 
-function buttonGuide() {
+const ButtonGuide = () => {
   return (
     <div>
-       <div className="buttons">
+      <div className="buttons">
           <Button size="large" onClick={() => console.log('클릭됐다!')}>BUTTON</Button>
           <Button>BUTTON</Button>
           <Button size="small">BUTTON</Button>
@@ -33,4 +33,4 @@ function buttonGuide() {
   )
 }
 
-export default buttonGuide
+export default ButtonGuide
