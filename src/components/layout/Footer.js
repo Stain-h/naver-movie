@@ -1,11 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <div>
+    <Wrapper className={ className }>
       Footer
-    </div>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.footer`
+  width:100%;
+  height:60px;
+`
 
 export default Footer

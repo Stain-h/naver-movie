@@ -1,7 +1,7 @@
 import React, { } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home, About, ButtonGuide } from './pages';
-import { DirectLink } from './components'
+import { DirectLink, Layout } from './components'
 import GlobalStyle from './style/GlobalStyle'
 
 function App() {
@@ -10,9 +10,13 @@ function App() {
       <GlobalStyle />
       <DirectLink></DirectLink>
       <BrowserRouter>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/buttonGuide" component={ButtonGuide} />
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/buttonGuide" component={ButtonGuide} />
+          </Switch>
+        </Layout>
       </BrowserRouter>
     </div>
   )

@@ -1,11 +1,18 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Header = () => {
+const Header = ({ className }) => {
   return (
-    <header className="br-header">
+    <Wrapper className={ className }>
       Header
-    </header>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.header`
+  width:100%;
+  height:60px;
+  background: skyblue;
+`
 
 export default Header
