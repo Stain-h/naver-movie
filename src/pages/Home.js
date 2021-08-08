@@ -1,11 +1,13 @@
 import React from 'react'
-import { SearchBar } from '../components'
+import { Box, SearchBar } from '../components'
 
 const Home = () => {
   return (
-    <div>
-      This is Home
-      <SearchBar placeHolder="검색어를 입력하세요"></SearchBar>
+    <div className="br-container">
+      <main className="br-main">
+        <SearchBar placeHolder="검색어를 입력하세요"></SearchBar>
+        <Box $width="100px" $height="100px"></Box>
+      </main>
     </div>
   )
 }

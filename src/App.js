@@ -9,13 +9,11 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <DirectLink></DirectLink>
-      <div className="br-container">
-          <BrowserRouter>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/buttonGuide" component={ButtonGuide} />
-          </BrowserRouter>
-      </div>
+      <BrowserRouter>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/buttonGuide" component={ButtonGuide} />
+      </BrowserRouter>
     </div>
   )
 }
