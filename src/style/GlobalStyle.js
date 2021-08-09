@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { SystemFont, fontNotoRg } from './_fonts'
 
 const GlobalStyle = createGlobalStyle`
   /* reset */
@@ -11,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   input::-ms-clear{display:none}
   button{border:0 none;background-color:transparent;cursor:pointer}
   body{background:#fff}
-  body,th,td,input,select,textarea,button{font-size:16px;line-height:1.5;font-family:$notoRg;color:#333} /* color값은 디자인가이드에 맞게사용 */
+  body,th,td,input,select,textarea,button{font-size:16px;line-height:1.5;${SystemFont}color:#333} /* color값은 디자인가이드에 맞게사용 */
   a{color:#333;text-decoration:none}
   a:active, a:hover{text-decoration:underline}
   a:active{background-color:transparent}
