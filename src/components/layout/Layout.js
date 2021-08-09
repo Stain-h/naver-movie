@@ -5,17 +5,19 @@ import styled from 'styled-components'
 
 const Layout = props => {
   const { children, match, location, history } = props;
-
   return (
-    <>
-      <Header className="br-header"></Header>
-      <Container className="br-main">{ children }</Container>
-      <Footer className="br-footer"></Footer>
-    </>
+    <Container>
+        <Header></Header>
+        <Main>{ children }</Main>
+        <Footer></Footer>
+    </Container>
   )
 }
 
-const Container = styled.main`
+const Container = styled.div`
+  height:100%;
+`
+const Main = styled.main`
   height:100%;
 `
 

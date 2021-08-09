@@ -12,6 +12,7 @@ const Footer = ({ className }) => {
 const Wrapper = styled.footer`
   width:100%;
   height:60px;
+  background-color: yellow;
 `
 
 export default Footer
