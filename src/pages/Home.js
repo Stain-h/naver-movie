@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
         <SearchBar placeHolder="검색어를 입력하세요"></SearchBar>
-        <Box width="100px" height="100px"></Box>
+        <Box width="200px" height="100px" title="Hello!!"></Box>
     </>
   )
 }

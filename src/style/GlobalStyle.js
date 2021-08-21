@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { SystemFont, fontNotoRg } from './_fonts'
+import { SystemFont, fontNotoBk } from './_fonts'
 
 const GlobalStyle = createGlobalStyle`
   /* reset */

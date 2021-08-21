@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Box = ({ width, height }) => {
+const Box = ({ width, height,title }) => {
   return (
     <Wrapper width={width} height={height}>
-      box
+      <strong className="tit_box">{title}</strong>
     </Wrapper>
   )
 }

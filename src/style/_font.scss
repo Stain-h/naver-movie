@@ -1,0 +1,102 @@
+// Beta Font :  NotoSans
+@font-face {
+  font-family: 'NotoSans Light';
+  font-style:normal;
+  src:
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Light.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-Light.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans Regular';
+  font-style:normal;
+  src:
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Regular.eot),
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Regular.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Regular.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-Regular.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans Medium';
+  font-style:normal;
+  src:
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Medium.eot),
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Medium.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Medium.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-Medium.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-Medium.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans Bold';
+  font-style:normal;
+  src:
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Bold.eot),
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Bold.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Bold.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-Bold.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans Black';
+  font-style:normal;
+  src:
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Black.eot),
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Black.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Black.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-Black.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-Black.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans DemiLight';
+  font-style:normal;
+  src:
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-DemiLight.eot),
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-DemiLight.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-DemiLight.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-DemiLight.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-DemiLight.woff) format('woff');
+}
+@font-face {
+  font-family: 'NotoSans Thin';
+  font-style:normal;
+  src:
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Thin.eot),
+  // url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Thin.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/NotoSansCJKkr-Thin.woff2) format('woff2'),
+  url(#{$fonturlPath}/NotoSansCJKkr/otf/NotoSansCJKkr-Thin.otf) format('opentype'),
+  url(#{$fonturlPath}/NotoSansCJKkr/woff/NotoSansCJKkr-Thin.woff) format('woff');
+}
+// Roboto
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  src: 
+  // url(#{$fonturlPath}/Roboto/Roboto-Light.eot),
+  // url(#{$fonturlPath}/Roboto/Roboto-Light.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/Roboto/Roboto-Light.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  src: 
+  // url(#{$fonturlPath}/Roboto/Roboto-Regular.eot),
+  // url(#{$fonturlPath}/Roboto/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/Roboto/Roboto-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  src: 
+  // url(#{$fonturlPath}/Roboto/Roboto-Medium.eot),
+  // url(#{$fonturlPath}/Roboto/Roboto-Medium.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/Roboto/Roboto-Medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  src: 
+  // url(#{$fonturlPath}/Roboto/Roboto-Bold.eot),
+  // url(#{$fonturlPath}/Roboto/Roboto-Bold.eot?#iefix) format('embedded-opentype'),
+  url(#{$fonturlPath}/Roboto/Roboto-Bold.woff2) format('woff2');
+} 
