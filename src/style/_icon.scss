@@ -1,0 +1,12 @@
+@mixin alt_opt {
+  display:block;
+  overflow:hidden;
+  font-size:0;
+  line-height:0;
+  text-indent:-9999px;
+}
+
+@mixin ico_comm {
+  @include alt_opt;
+  vertical-align: top;
+}

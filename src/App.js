@@ -1,6 +1,6 @@
 import React, { } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home, About, ButtonGuide } from './pages';
+import { Home, SearchPage, ButtonGuide } from './pages';
 import { DirectLink, Layout } from './components'
 import GlobalStyle from './style/GlobalStyle'
 
@@ -13,8 +13,8 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/buttonGuide" component={ButtonGuide} />
+            <Route path="/search" component={SearchPage} />
+            {/* <Route path="/buttonGuide" component={ButtonGuide} /> */}
           </Switch>
         </Layout>
       </BrowserRouter>
