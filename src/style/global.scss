@@ -7,3 +7,13 @@ body{
 
 
 
+@mixin positionRightTop {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+@mixin flexAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
