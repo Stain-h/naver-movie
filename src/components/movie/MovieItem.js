@@ -1,14 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './movie.scss'
 
 const MovieItem = ({ title, subtitle, image, link, userRating, pubDate, director }) => {
-  // actor: movie.actor 
-  // director: movie.director
-  // image: movie.image 
-  // link: movie.link
-  // pubDate: movie.pubDate
-  // subtitle: movie.subtitle
-  // title: movie.title
+  
+  title = title.replace(/<b>/gi, "").replace(/<\/b>/gi, "").replace(/&amp;/gi,"&").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">");
 
   return (
     <div className="box_movie">
@@ -18,12 +14,22 @@ const MovieItem = ({ title, subtitle, image, link, userRating, pubDate, director
           }
       </a>
       <div className="wrap_info">
-        <h2>{title.replace(/<b>/gi, "").replace(/<\/b>/gi, "").replace(/&amp;/gi,"&")}</h2>
+        <h2>{title}</h2>
         <p>{subtitle}</p>
         <span>{userRating}</span>
       </div>
     </div>
   )
+}
+
+MovieItem.propTypes = {
+  title : PropTypes.string.isRequired,
+  subtitle : PropTypes.string,
+  image : PropTypes.string,
+  link : PropTypes.string,
+  userRating : PropTypes.string,
+  pubDate : PropTypes.string,
+  director : PropTypes.string,
 }
 
 export default MovieItem

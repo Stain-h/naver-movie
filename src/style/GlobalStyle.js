@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
   .screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
   .show{display:block}
   .hide{display:none}
+  
+  /* common */
+  html,body{height:100%}
+  #App{height:100%}
 `;
 
 export default GlobalStyle
