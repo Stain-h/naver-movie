@@ -13,7 +13,7 @@ const Search = () => {
       const SECRET_KEY = 'jIeE2IpabY';
       const data = {
         params: {
-          query: '007',
+          query: '아이언맨',
           display: 20
         },
         headers: {
