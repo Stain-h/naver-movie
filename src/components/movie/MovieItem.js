@@ -1,5 +1,6 @@
 import React from 'react'
 import './movie.scss'
+import PropTypes from 'prop-types'
 
 const MovieItem = ({ title, subtitle, image, link, userRating, pubDate, director }) => {
   // actor: movie.actor 
@@ -24,6 +25,16 @@ const MovieItem = ({ title, subtitle, image, link, userRating, pubDate, director
       </div>
     </div>
   )
+}
+
+MovieItem.propTypes = {
+  title : PropTypes.string.isRequired,
+  subtitle : PropTypes.string,
+  image : PropTypes.string,
+  link : PropTypes.string,
+  userRating : PropTypes.string,
+  pubDate : PropTypes.string,
+  director : PropTypes.string,
 }
 
 export default MovieItem

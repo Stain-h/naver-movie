@@ -7,32 +7,29 @@ const Search = () => {
   const [movies, setMovies] = useState([]);
   const [keyword, setKeyword] = useState('');
   
-  useEffect(() => {
-    const getMovie = async () => {
-      const ID_KEY = 'sA6DKWhkyY6B1sPt9ykg';
-      const SECRET_KEY = 'jIeE2IpabY';
-      const data = {
-        params: {
-          query: '아이언맨',
-          display: 20
-        },
-        headers: {
-          'X-Naver-Client-Id': ID_KEY,
-          'X-Naver-Client-Secret': SECRET_KEY
-        }
-      }
-      
-      try{
-        const response = await axios.get('/v1/search/movie.json', data)
-          setMovies(response.data.items);
-      }catch(e){
-        alert(e)
+  const getMovie = async (keyword) => {
+    const ID_KEY = 'sA6DKWhkyY6B1sPt9ykg';
+    const SECRET_KEY = 'jIeE2IpabY';
+    const search = keyword;
+
+    const data = {
+      params: {
+        query: search,
+        display: 20
+      },
+      headers: {
+        'X-Naver-Client-Id': ID_KEY,
+        'X-Naver-Client-Secret': SECRET_KEY
       }
     }
-    getMovie();
-  }, [])
-
-console.log(movies);
+    
+    try{
+      const response = await axios.get('/v1/search/movie.json', data)
+      setMovies(response.data.items);
+    }catch(e){
+      alert(e)
+    }
+  }
     
   const onHandleChange = (e) => {
     setKeyword(e.target.value);
@@ -40,7 +37,8 @@ console.log(movies);
   
   const onHandleSubmit = (e) => {
     e.preventDefault();
-    // getMovie();
+    getMovie(keyword);
+    console.log(keyword);
   }
 
   return (
