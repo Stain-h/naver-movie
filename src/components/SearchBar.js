@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './SearchBar.scss'
 
-const SearchBar = ({ placeHolder, onUserInput, onUserSubmit, keyword,}) => {
+const SearchBar = ({ placeHolder, onUserInput, onUserSubmit, keyword}) => {
 
   const onChange = (e) => {
     onUserInput(e.target.value)
   }
-  const onSubmit = () => {
-    onUserSubmit()
+  const onSubmit = (e) => {
+    e.preventDefault();
+    onUserSubmit(keyword)
   }
 
   return (

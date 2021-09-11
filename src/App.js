@@ -6,7 +6,7 @@ import GlobalStyle from './style/GlobalStyle'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyle />
       <DirectLink></DirectLink>
       <BrowserRouter>
@@ -19,7 +19,7 @@ function App() {
           </Switch>
         </Layout>
       </BrowserRouter>
-    </div>
+    </>
   )
 }
 
