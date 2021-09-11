@@ -5,6 +5,9 @@
   height: 40px;
   background-color: skyblue;
 }
+.content-article{
+  padding-bottom: 100px;
+}
 
 
 
@@ -16,5 +19,15 @@
 }
 .wrap_search{
   width: 600px;
+  margin: 0 auto;
+}
+
+// 
+.cont_movie{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  gap: 16px;
+  width: 1216px;
   margin: 0 auto;
 }

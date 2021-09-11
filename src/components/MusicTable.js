@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const MusicTable = ({ music, keyword }) => {
   let row = [];
-  console.log(music);
   music.forEach((m,idx) => {
     // 검색어에 해당되지 않는 값 표현 X
     if(m.title.indexOf(keyword) == -1){
