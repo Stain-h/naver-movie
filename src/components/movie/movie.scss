@@ -1,0 +1,15 @@
+.box_movie{
+  display: flex;
+  width: 600px;
+  height: 200px;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  background: #fff;
+  box-sizing: border-box;
+  img{
+    
+  }
+  .wrap_info{
+    padding: 24px;
+  }
+}
