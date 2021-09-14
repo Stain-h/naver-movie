@@ -1,35 +1,44 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components';
 import './movie.scss'
 
-const MovieItem = ({ title, subtitle, image, link, userRating, pubDate, director }) => {
-  
-  title = title.replace(/<b>/gi, "").replace(/<\/b>/gi, "").replace(/&amp;/gi,"&").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">");
+const MovieItem = ({ movies, isLoading }) => {
+
+  const replaceTitle = (string) => {
+    return string.replace(/<b>/gi, "").replace(/<\/b>/gi, "")
+                          .replace(/&amp;/gi,"&").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">")
+  } 
 
   return (
-    <div className="box_movie">
-      <a href={link} className="link_movie">
-          { image && <img src={image} width={116} height={166} />
-            || <img src="http://placehold.it/116x166" /> 
-          }
-      </a>
-      <div className="wrap_info">
-        <h2>{title}</h2>
-        <p>{subtitle}</p>
-        <span>{userRating}</span>
-      </div>
-    </div>
+    isLoading 
+        ?  <Loading>Loading...</Loading>
+        : movies.map((movie,idx) => 
+          <div className="box_movie" key={idx}>
+            <a href={movie.link} className="link_movie">
+                { movie.image && <img src={movie.image} width={116} height={166} />
+                  || <img src="http://placehold.it/116x166" /> 
+                }
+            </a>
+            <div className="wrap_info">
+              <h2>{replaceTitle(movie.title)}</h2>
+              <p>{movie.subtitle}</p>
+              <span>{movie.userRating}</span>
+            </div>
+          </div>
+        )
+      
   )
 }
 
 MovieItem.propTypes = {
-  title : PropTypes.string.isRequired,
-  subtitle : PropTypes.string,
-  image : PropTypes.string,
-  link : PropTypes.string,
-  userRating : PropTypes.string,
-  pubDate : PropTypes.string,
-  director : PropTypes.string,
+  movies : PropTypes.array.isRequired
 }
+
+const Loading = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+`
 
 export default MovieItem
