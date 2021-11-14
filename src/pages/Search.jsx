@@ -1,8 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-// import SearchMovie from '../components/SearchMovie';
-// import "./Home.css";
-// import "./Search.css";
 
 class Search extends React.Component {
   state = {
@@ -47,12 +44,12 @@ class Search extends React.Component {
   componentDidMount() {
     this.getSearchMovie();
   };
-  handleChange = (e: any) => {
+  handleChange = (e) => {
     this.setState({
       value: e.target.value
     });
   };
-  handleSubmit = (e: any) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     this.getSearchMovie();
   };

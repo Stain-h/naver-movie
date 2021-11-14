@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './SearchBar.scss'
+import '../css/components/SearchBar.scss';
 
 const SearchBar = ({ placeHolder, onUserInput, onUserSubmit, keyword}) => {
 
