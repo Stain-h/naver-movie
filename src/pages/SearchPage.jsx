@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
-import { SearchBar, MovieItem } from '../components';
+import SearchBar from '../components/SearchBar';
+import MovieItem from '../components/movie/MovieItem';
 
 const Search = () => {
 
@@ -49,6 +50,23 @@ const Search = () => {
     getMovie(ee);
   }
 
+  const handleScroll = (ee) => {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = document.documentElement.clientHeight;
+    const scrollTop = document.documentElement.scrollTop;
+    if(scrollTop + clientHeight >= scrollHeight){
+        console.log('end!!!')
+        // getMovie(ee);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll(keyword));
+    return () => {
+      window.removeEventListener('scroll', handleScroll(keyword));
+    }
+  }, )
+  
 
   return (
     <article className="content-article">

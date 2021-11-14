@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Box, SearchBar } from '../components'
+import Box from '../components/box/Box'
+import SearchBar from '../components/SearchBar'
 import axios from 'axios'
-import './pages.scss'
 
 const Home = () => {
 
